@@ -40,6 +40,20 @@
   <a href="#">
     <img src="https://img.shields.io/badge/Dataset-VisCoR--55K-green?style=flat-square" alt="Dataset">
   </a> -->
+  <a href="https://huggingface.co/datasets/5551z/VisCoR-55K">
+    <img src="https://img.shields.io/badge/🤗_Dataset-VisCoR--55K-green?style=flat-square" alt="Hugging Face">
+  </a>&#160;
+  <a href="https://www.modelscope.cn/datasets/W1zheng/VisCoR-55K">
+    <img src="https://img.shields.io/badge/🤖_Dataset-VisCoR--55K-blue?style=flat-square" alt="ModelScope">
+  </a>&#160;
+  <a href="https://huggingface.co/datasets/5551z/VisCoR_Contrast">
+    <img src="https://img.shields.io/badge/🤗_Dataset-VisCoR_Contrast-orange?style=flat-square" alt="Hugging Face Contrast">
+  </a>&#160;
+  <a href="https://www.modelscope.cn/datasets/W1zheng/VisCoR_Contrast">
+    <img src="https://img.shields.io/badge/🤖_Dataset-VisCoR_Contrast-yellow?style=flat-square" alt="ModelScope Contrast">
+  </a>&#160;
+
+
 </p>
 
 </div>
@@ -49,6 +63,7 @@
 - **Feb 06, 2026**: 🎉 VC-STaR has been selected as **ICLR 2026 Oral**!
 - **Mar 26, 2026**: 📊 VisCoR-55K dataset is being organized and will be released soon.
 - **Mar 26, 2026**: 🤖 Model checkpoints are being prepared. Stay tuned!
+- **Apr 29, 2026**: 📊 VisCoR-55K dataset is released!
 
 ## 🚩 Table of Contents
 - [Abstract](#abstract)
@@ -117,7 +132,7 @@ We perform a two-step filtering process to identify meaningful contrastive count
 
 ## <a id="cot"></a>🤔 Rationale Generation
 
-Based on the curated contrastive VQA pairs, we can generate rationale for self-improving. The whole process includes sthree steps:
+Based on the curated contrastive VQA pairs, we can generate rationale for self-improving. The whole process includes three steps:
 
 1.  **Think:** The model generates a coarse, initial rationale.
 2.  **Contrast:** The model compares the target image with its contrastive counterpart to perform a contrastive analysis.
@@ -132,9 +147,10 @@ Based on the curated contrastive VQA pairs, we can generate rationale for self-i
 **VisCoR-55K** is a high-quality visual reasoning dataset spanning **5 categories**: General, Reasoning, Math, Graph/Chart, and OCR.
 
 We release the dataset with the following components:
-1.  **VQA Samples**: The original visual question-answering pairs.
-2.  **Generated Rationales**: High-quality reasoning paths synthesized by our VC-STaR framework.
-3.  **Contrastive Counterparts**: The corresponding contrastive VQA pairs used to elicit the faithful rationales.
+1.  **VQA Samples**: The original visual question-answering pairs.  [VisCoR_Contrast](https://huggingface.co/datasets/5551z/VisCoR_Contrast)
+2.  **Contrastive Counterparts**: The corresponding contrastive VQA pairs used to elicit the faithful rationales. [VisCoR_Contrast](https://huggingface.co/datasets/5551z/VisCoR_Contrast)
+3.  **Generated Rationales**: High-quality reasoning paths synthesized by our VC-STaR framework. [VisCoR-55K](https://huggingface.co/datasets/5551z/VisCoR-55K)
+
 
 We hope the synthesized rationales and our constructed contrastive pairs will facilitate future research in visual reasoning.
 
